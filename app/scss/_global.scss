@@ -3,6 +3,17 @@ body {
   font-weight: 400;
   background-color: #fff;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.body--fixed {
+  overflow: hidden;
+  // position: fixed;
+}
+
+.main {
+  flex-grow: 1;
 }
 
 .container {

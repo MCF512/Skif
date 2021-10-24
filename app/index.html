@@ -20,8 +20,41 @@
       <li class="header__item">
         <a class="header__link" href="#">Преимущества</a>
       </li>
-      <li class="header__item">
+      <li class="header__item header__item--dropdown">
         <a class="header__link" href="#">Решения</a>
+
+        <ul class="header-dropdown">
+          <li class="header-dropdown__item">
+            <a class="header-dropdown__link" href="">Умный дом</a>
+          </li>
+          <li class="header-dropdown__item">
+            <a class="header-dropdown__link" href="">Мониторинг транспорта и стационарных объектов</a>
+          </li>
+          <li class="header-dropdown__item">
+            <a class="header-dropdown__link" href="">FinTech</a>
+          </li>
+          <li class="header-dropdown__item">
+            <a class="header-dropdown__link" href="">Система компенсации за сортировку мусора</a>
+          </li>
+          <li class="header-dropdown__item">
+            <a class="header-dropdown__link" href="">Проекты AR/VR</a>
+          </li>
+          <li class="header-dropdown__item">
+            <a class="header-dropdown__link" href="">Умный дом</a>
+          </li>
+          <li class="header-dropdown__item">
+            <a class="header-dropdown__link" href="">Метеорологический мониторинг</a>
+          </li>
+          <li class="header-dropdown__item">
+            <a class="header-dropdown__link" href="">SKIF Gate СКУД</a>
+          </li>
+          <li class="header-dropdown__item">
+            <a class="header-dropdown__link" href="">Сервис доставки </a>
+          </li>
+          <li class="header-dropdown__item">
+            <a class="header-dropdown__link" href="">Система мониторинга коммуникаций ЖКХ </a>
+          </li>
+        </ul>
       </li>
       <li class="header__item">
         <a class="header__link" href="#">Технологии</a>
@@ -37,6 +70,8 @@
       </li>
       <!-- </ul> -->
     </nav>
+
+    <button class="header__burger"></button>
 
     <ul class="header__languages">
       <li class="header__language">
@@ -158,93 +193,103 @@
           Партнеры
         </h2>
 
-        <ul class="partners__list">
-          <li class="partners__item">
-            <a class="partners__link" href="#">
-              <img src="images/partners/evenlab.svg" alt="evenlab">
-            </a>
-          </li>
-          <li class="partners__item">
-            <a class="partners__link" href="#">
-              <img src="images/partners/galileo.png" alt="galileo">
-            </a>
-          </li>
-          <li class="partners__item">
-            <a class="partners__link" href="#">
-              <img src="images/partners/teltonika.png" alt="teltonika">
-            </a>
-          </li>
-          <li class="partners__item">
-            <a class="partners__link" href="#">
-              <img src="images/partners/navtel.png" alt="navtelecom">
-            </a>
-          </li>
-          <li class="partners__item">
-            <a class="partners__link" href="#">
-              <img src="images/partners/arusnav.png" alt="arusnav">
-            </a>
-          </li>
-          <li class="partners__item">
-            <a class="partners__link" href="#">
-              <img src="images/partners/globalsat.png" alt="globalsat">
-            </a>
-          </li>
-          <li class="partners__item">
-            <a class="partners__link" href="#">
-              <img src="images/partners/glonas.png" alt="glonas">
-            </a>
-          </li>
-          <li class="partners__item">
-            <a class="partners__link" href="#">
-              <img src="images/partners/module.png" alt="module">
-            </a>
-          </li>
-          <li class="partners__item">
-            <a class="partners__link" href="#">
-              <img src="images/partners/e.png" alt="idk">
-            </a>
-          </li>
-          <li class="partners__item">
-            <a class="partners__link" href="#">
-              <img src="images/partners/kjd.png" alt="kjd">
-            </a>
-          </li>
-          <li class="partners__item">
-            <a class="partners__link" href="#">
-              <img src="images/partners/kazpost.png" alt="kazpost">
-            </a>
-          </li>
-          <li class="partners__item">
-            <a class="partners__link" href="#">
-              <img src="images/partners/olzha.png" alt="olzha">
-            </a>
-          </li>
-          <li class="partners__item">
-            <a class="partners__link" href="#">
-              <img src="images/partners/farvater.png" alt="farvater">
-            </a>
-          </li>
-          <li class="partners__item">
-            <a class="partners__link" href="#">
-              <img src="images/partners/it-dep.png" alt="departament">
-            </a>
-          </li>
-          <li class="partners__item">
-            <a class="partners__link" href="#">
-              <img src="images/partners/rostelecom.png" alt="rostelecom">
-            </a>
-          </li>
-          <li class="partners__item">
-            <a class="partners__link" href="#">
-              <img src="images/partners/rtelek.png" alt="rtelek">
-            </a>
-          </li>
-          <li class="partners__item">
-            <a class="partners__link" href="#">
-              <img src="images/partners/meitrack.png" alt="meitrack">
-            </a>
-          </li>
-        </ul>
+        <div class="partners__slider">
+          <div class="partners__slide">
+            <ul class="partners__list partners__list--main">
+              <li class="partners__item">
+                <a class="partners__link" href="#">
+                  <img src="images/partners/evenlab.svg" alt="evenlab">
+                </a>
+              </li>
+              <li class="partners__item">
+                <a class="partners__link" href="#">
+                  <img src="images/partners/galileo.png" alt="galileo">
+                </a>
+              </li>
+              <li class="partners__item">
+                <a class="partners__link" href="#">
+                  <img src="images/partners/teltonika.png" alt="teltonika">
+                </a>
+              </li>
+              <li class="partners__item">
+                <a class="partners__link" href="#">
+                  <img src="images/partners/navtel.png" alt="navtelecom">
+                </a>
+              </li>
+              <li class="partners__item">
+                <a class="partners__link" href="#">
+                  <img src="images/partners/arusnav.png" alt="arusnav">
+                </a>
+              </li>
+              <li class="partners__item">
+                <a class="partners__link" href="#">
+                  <img src="images/partners/globalsat.png" alt="globalsat">
+                </a>
+              </li>
+              <li class="partners__item">
+                <a class="partners__link" href="#">
+                  <img src="images/partners/glonas.png" alt="glonas">
+                </a>
+              </li>
+              <li class="partners__item">
+                <a class="partners__link" href="#">
+                  <img src="images/partners/module.png" alt="module">
+                </a>
+              </li>
+              <li class="partners__item">
+                <a class="partners__link" href="#">
+                  <img src="images/partners/e.png" alt="idk">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="partners__slide">
+            <ul class="partners__list partners__list--secondary">
+              <li class="partners__item">
+                <a class="partners__link" href="#">
+                  <img src="images/partners/kjd.png" alt="kjd">
+                </a>
+              </li>
+              <li class="partners__item">
+                <a class="partners__link" href="#">
+                  <img src="images/partners/kazpost.png" alt="kazpost">
+                </a>
+              </li>
+              <li class="partners__item">
+                <a class="partners__link" href="#">
+                  <img src="images/partners/olzha.png" alt="olzha">
+                </a>
+              </li>
+              <li class="partners__item">
+                <a class="partners__link" href="#">
+                  <img src="images/partners/farvater.png" alt="farvater">
+                </a>
+              </li>
+              <li class="partners__item">
+                <a class="partners__link" href="#">
+                  <img src="images/partners/it-dep.png" alt="departament">
+                </a>
+              </li>
+              <li class="partners__item">
+                <a class="partners__link" href="#">
+                  <img src="images/partners/rostelecom.png" alt="rostelecom">
+                </a>
+              </li>
+              <li class="partners__item">
+                <a class="partners__link" href="#">
+                  <img src="images/partners/rtelek.png" alt="rtelek">
+                </a>
+              </li>
+              <li class="partners__item">
+                <a class="partners__link" href="#">
+                  <img src="images/partners/meitrack.png" alt="meitrack">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
       </div>
     </section>
 
@@ -478,7 +523,8 @@
 
         <div class="footer__map">
           <script type="text/javascript" charset="utf-8" async
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab26f18b69defa4fc58cf58b7f0439aff5570ca8aebbdcf305cef63c37392a2b9&amp;width=812&amp;height=495&amp;lang=ru_RU&amp;scroll=true"></script>
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab26f18b69defa4fc58cf58b7f0439aff5570ca8aebbdcf305cef63c37392a2b9&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+          <!-- <img src="images/map.png" alt="map"> -->
         </div>
       </div>
     </div>

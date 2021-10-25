@@ -142,10 +142,10 @@
       font-size: 50px;
     }
   
-    &__map {
-      max-width: 485px;
-      // width: 100%;
-    }
+    // &__map {
+    //   max-width: 485px;
+    //   // width: 100%;
+    // }
   }
 }
 
@@ -154,6 +154,10 @@
   .header {
     &__nav {
       display: none;
+
+      &--active {
+        display: block;
+      }
     }
 
     &__burger {
@@ -161,6 +165,17 @@
     }
 
     &__languages {
+      display: none;
+    }
+  }
+
+  .solutions {
+
+    &__list {
+      display: block;
+    }
+
+    &__image {
       display: none;
     }
   }
@@ -184,11 +199,32 @@
     }
   }
 
-  .footer {
+  .all-solutions {
 
-    &__map {
-      max-width: 375px;
+    &__list {
+      grid-template-columns: 1fr;
+      // grid-row-gap: 20px;
     }
+  }
+
+  .job {
+    padding-bottom: 0px;
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .hr {
+    padding-top: 45px;
   }
 }
 
@@ -247,7 +283,7 @@
     
     &__title {
       font-size: 40px;
-    }
+    }    
   }
 
   .partners {
@@ -305,9 +341,219 @@
     &__adress {
       font-size: 22px;
     }
+  }
+
+  .info {
+    padding: 80px 0;
+  }
+
+  .all-solutions {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width:576px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .header {
+    padding: 23px 15px;
+
+    &__item--dropdown {
+      
+      .header-dropdown {
+        position: static;
+        // padding: 30px;
+        padding: 15px 30px;
+        margin-left: 30px;
+      }
+    }
+  }
+
+  .about {
+    // padding-top: 86px;
+    padding-bottom: 322px;
+
+    &__title {
+      font-size: 34px;
+      margin-bottom: 50px;
+      padding-top: 86px;
+    }
+
+    &__text {
+      font-size: 16px;
+      letter-spacing: 0.02em;
+      // opacity: 1;
+    }
+  }
+
+  .advantages {
+    padding-top: 80px;
+    padding-bottom: 20px;
+
+    &__title {
+      font-size: 28px;
+      max-width: 190px;
+      margin-bottom: 43px;
+    }
+
+    &__about {
+      font-size: 16px;
+      // margin-bottom: 80px;
+      span:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__text {
+      font-size: 16px;
+      // margin-bottom: 80px;
+    }
+
+    &__blocks {
+      grid-template-columns: 1fr;
+    }
+
+    &__subtitle {
+      // font-size: 22px;
+      padding-left: 100px;
+      margin-bottom: 15px;
+    }
+
+
+  }
+
+  .partners {
+    padding-top: 80px;
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__list {
+
+      li {
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .tech {
+    // padding-top: 80px;
+
+    &__title {
+      font-size: 28px;
+      padding-top: 80px;
+      margin-bottom: 50px;
+    }
+
+    &__text {
+      margin-bottom: 60px;
+      font-size: 18px;
+    }
+
+    &__inner {
+      grid-template-columns: 1fr;
+      grid-row-gap: 45px;
+      padding-bottom: 80px;
+    }
+  }
+
+  .footer {
+    // padding-top: 80px;
+    flex-direction: column;
+
+    &__title {
+      padding-top: 80px;
+      font-size: 28px;
+      margin-bottom: 60px;
+    }
+
+    &__tel {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    &__adress {
+      font-size: 18px;
+      margin-bottom: 60px;
+
+      span{
+        margin-bottom: 0;
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+    }
 
     &__map {
-      max-width: 338px;
+      width: 100%;
+    }
+
+    &__inner {
+      flex-direction: column;
+    }
+  }
+
+  .info {
+    padding: 70px 0;
+
+    &__title {
+      font-size: 25px;
+    }
+  }
+
+  .all-solutions {
+
+    &__title {
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .contact {
+
+    &__title {
+      font-size: 30px;
+    }
+  }
+
+  .job {
+    padding-top: 91px;
+  }
+
+  .hr {
+    padding-bottom: 120px;
+
+    &__title {
+      margin-bottom: 23px;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 21px;
+    }
+  }
+}
+
+@media (max-width:375px) {
+  .partners {
+    &__list {
+      li {
+        // margin-right: 0;
+
+        &:nth-child(4) {
+          margin-right: 0;
+        }
+
+        &:nth-child(6) {
+          margin-right: 0;
+        }
+
+        margin-right: 20px;
+      }
     }
   }
 }

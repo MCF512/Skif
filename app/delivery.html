@@ -11,89 +11,81 @@
 
 <body>
   <header class="header header--dark">
-    <a class="header__logo logo" href="#">
+    <a class="header__logo logo" href="index.html">
       <img src="images/logo.svg" alt="logo">
     </a>
 
-    <nav class="header__nav">
-      <!-- <ul class="header__list"> -->
+    <nav class="header__nav header__nav--active__dark">
       <li class="header__item">
-        <a class="header__link" href="#">Преимущества</a>
+        <a class="header__link" href="index.html#advantages">Преимущества</a>
+      </li>
+      <li class="header__item header__item--dropdown">
+        <a class="header__drop" href="#">Решения</a>
+
+        <ul class="header-dropdown">
+          <li class="header-dropdown__item">
+            <a class="header-dropdown__link" href="smart.html">Умный дом</a>
+          </li>
+          <li class="header-dropdown__item">
+            <a class="header-dropdown__link" href="transport.html">Мониторинг транспорта и стационарных объектов</a>
+          </li>
+          <li class="header-dropdown__item">
+            <a class="header-dropdown__link" href="fintech.html">FinTech</a>
+          </li>
+          <li class="header-dropdown__item">
+            <a class="header-dropdown__link" href="trash.html">Система компенсации за сортировку мусора</a>
+          </li>
+          <li class="header-dropdown__item">
+            <a class="header-dropdown__link" href="ar.html">Проекты AR/VR</a>
+          </li>
+          <li class="header-dropdown__item">
+            <a class="header-dropdown__link" href="smart.html">Умный дом</a>
+          </li>
+          <li class="header-dropdown__item">
+            <a class="header-dropdown__link" href="meteo.html">Метеорологический мониторинг</a>
+          </li>
+          <li class="header-dropdown__item">
+            <a class="header-dropdown__link" href="gate.html">SKIF Gate СКУД</a>
+          </li>
+          <li class="header-dropdown__item">
+            <a class="header-dropdown__link" href="delivery.html">Сервис доставки </a>
+          </li>
+          <li class="header-dropdown__item">
+            <a class="header-dropdown__link" href="communication.html">Система мониторинга коммуникаций ЖКХ </a>
+          </li>
+        </ul>
       </li>
       <li class="header__item">
-        <a class="header__link" href="#">Решения</a>
+        <a class="header__link" href="index.html#tech">Технологии</a>
       </li>
       <li class="header__item">
-        <a class="header__link" href="#">Технологии</a>
+        <a class="header__link" href="index.html#tech">Партнеры</a>
       </li>
       <li class="header__item">
-        <a class="header__link" href="#">Партнеры</a>
+        <a class="header__link" href="job.html">Работа у нас</a>
       </li>
       <li class="header__item">
-        <a class="header__link" href="#">Работа у нас</a>
+        <a class="header__link" href="#contact">Контакты</a>
       </li>
-      <li class="header__item">
-        <a class="header__link" href="#">Контакты</a>
-      </li>
-      <!-- </ul> -->
     </nav>
 
-    <ul class="header__languages">
-      <li class="header__language">
-        <button class="header__btn header__btn--russian" style="background-image: url(images/russian.png);">
-
-        </button>
-      </li>
-      <li class="header__language">
-        <button class="header__btn header__btn--english" style="background-image: url(images/english.png);">
-
-        </button>
-      </li>
-      <li class="header__language">
-        <button class="header__btn header__btn--french" style="background-image: url(images/french.png);">
-
-        </button>
-      </li>
-    </ul>
+    <button class="header__burger header__burger--dark"></button>
   </header>
 
   <main class="main">
     <section class="info">
       <div class="container">
         <h2 class="info__title">
-          SKIF Gate СКУД
+          Сервис доставки
         </h2>
 
-        <img class="info__img" src="images/solutions/gate.png" alt="">
+        <img class="info__img" src="images/solutions/delivery.png" alt="delivery">
 
         <p class="info__text">
-          <span>SKIF Gate СКУД - система контроля доступа с возможностью управлять допуском на объект, автоматически
-            открывать
-            шлагбаумы, двери и ворота. С этим приложением возможно следить и удаленно управлять доступом на пропускных
-            пунктах.</span>
+          <span>Сервис доставки - приложение для автоматизации процесса заказа, отгрузки и определения местонахождения
+            курьера в реальном времени. Позволяет осуществлять заказ, отслеживать отгрузку и наблюдать за процессом
+            доставки в режиме онлайн. </span>
         </p>
-
-        <h2 class="info__subtitle">
-          Функционал приложения:
-        </h2>
-
-        <ol class="info__list">
-          <li class="info__item">
-            Биометрический сканер
-          </li>
-          <li class="info__item">
-            Распознавание лиц
-          </li>
-          <li class="info__item">
-            Распознавание номеров автомобилей
-          </li>
-          <li class="info__item">
-            Система контроля рабочего времени
-          </li>
-          <li class="info__item">
-            Фото и видео-фиксация
-          </li>
-        </ol>
       </div>
     </section>
 
@@ -105,49 +97,49 @@
 
         <ul class="all-solutions__list">
           <li class="all-solutions__item">
-            <a class="all-solutions__link" href="#">
+            <a class="all-solutions__link" href="transport.html">
               Мониторинг транспорта и стационарных объектов
             </a>
           </li>
           <li class="all-solutions__item">
-            <a class="all-solutions__link" href="#">
+            <a class="all-solutions__link all-solutions__link--active" href="delivery.html">
               Сервис доставки
             </a>
           </li>
           <li class="all-solutions__item">
-            <a class="all-solutions__link" href="#">
+            <a class="all-solutions__link" href="meteo.html">
               Метеорологический мониторинг
             </a>
           </li>
           <li class="all-solutions__item">
-            <a class="all-solutions__link all-solutions__link--active" href="#">
+            <a class="all-solutions__link" href="gate.html">
               SKIF Gate СКУД
             </a>
           </li>
           <li class="all-solutions__item">
-            <a class="all-solutions__link" href="#">
+            <a class="all-solutions__link" href="ar.html">
               Проекты
               AR/VR
             </a>
           </li>
           <li class="all-solutions__item">
-            <a class="all-solutions__link" href="#">
+            <a class="all-solutions__link" href="trash.html">
               Система компенсации
               за сортировку мусора
             </a>
           </li>
           <li class="all-solutions__item">
-            <a class="all-solutions__link" href="#">
+            <a class="all-solutions__link" href="communication.html">
               Система мониторинга коммуникаций ЖКХ
             </a>
           </li>
           <li class="all-solutions__item">
-            <a class="all-solutions__link" href="#">
+            <a class="all-solutions__link" href="fintech.html">
               FinTech
             </a>
           </li>
           <li class="all-solutions__item">
-            <a class="all-solutions__link" href="#">
+            <a class="all-solutions__link" href="smart.html">
               Умный дом
             </a>
           </li>
@@ -155,7 +147,7 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="container">
         <h2 class="contact__title title">
           Контакты

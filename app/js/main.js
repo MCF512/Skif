@@ -12,6 +12,13 @@ $('.header__link').on('click', function () {
   $('body').removeClass('body--fixed');
 });
 
+$(".header__nav").on("click", "a", function (event) {
+  event.preventDefault();
+  let id = $(this).attr('href'),
+    top = $(id).offset().top;
+  $('body,html').animate({ scrollTop: top }, 1000);
+});
+
 $('.partners__slider').slick({
   dots: true,
   responsive: [{

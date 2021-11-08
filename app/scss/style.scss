@@ -27,6 +27,7 @@
     font-size: 18px;
     margin-left: 100px;
     flex-grow: 1;
+    // overflow: scroll;
     // display: none;
 
     // &--dark {
@@ -49,7 +50,7 @@
       width: 100%;
       height: calc(100vh - 80px);
       font-size: 22px;
-      // overflow: hidden;
+      overflow-y: scroll;
 
       &__dark {
         background-color: #000;
@@ -72,6 +73,7 @@
         top: 0;
         padding-top: 30px;
         font-size: 18px;
+        // overflow: scroll;
         // bottom: 0;
 
         // &--dark {
